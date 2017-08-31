@@ -1,0 +1,68 @@
+language: bash
+sudo: required
+services:
+- docker
+before_script:
+- openssl aes-256-cbc -K $encrypted_9cc1f37f0fdd_key -iv $encrypted_9cc1f37f0fdd_iv
+  -in khs1994-robot.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- git config --global user.name "khs1994-merge-robot"
+- git config --global user.email "ai@khs1994.com"
+- echo "TZ='Asia/Shanghai'; export TZ" >> ~/.profile
+- ". ~/.profile"
+- date
+- export DEPLOY_BRANCH=gh-pages
+- docker pull khs1994/gitbook
+script:
+- cd ~
+- export REPO=$REPO_1
+- export REPO_ALIYUN=$REPO_ALIYUN_1
+- git clone --depth=10 --branch=master $REPO repo
+- cd repo/doc
+- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- cd ~
+- export REPO=$REPO_2
+- export REPO_ALIYUN=$REPO_ALIYUN_2
+- git clone --depth=10 --branch=master $REPO repo
+- cd repo
+- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- cd ~
+- export REPO=$REPO_3
+- export REPO_ALIYUN=$REPO_ALIYUN_3
+- git clone --depth=10 --branch=master $REPO repo
+- cd repo/Documentation
+- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- cd ~
+- export REPO=$REPO_4
+- export REPO_ALIYUN=$REPO_ALIYUN_4
+- git clone --depth=10 --branch=5.5 $REPO repo
+- cd repo
+- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- cd ~
+- export REPO=$REPO_5
+- export REPO_ALIYUN=$REPO_ALIYUN_5
+- git clone --depth=10 --branch=5.4 $REPO repo
+- cd repo
+- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- cd ~
+install:
+- echo $PWD
+env:
+  global:
+  - REPO_1: git@github.com:khs1994-gitbook/ignition.git
+  - REPO_ALIYUN_1: git@code.aliyun.com:khs1994-gitbook/ignition.git
+  - REPO_2: git@github.com:khs1994-gitbook/coreos-docs.git
+  - REPO_ALIYUN_2: git@code.aliyun.com:khs1994-gitbook/coreos-docs.git
+  - REPO_3: git@github.com:khs1994-gitbook/etcd.git
+  - REPO_ALIYUN_3: git@code.aliyun.com:khs1994-gitbook/etcd.git
+  - REPO_4: git@github.com:khs1994-gitbook/laravel-docs-en.git
+  - REPO_ALIYUN_4: git@code.aliyun.com:khs1994-gitbook/laravel-docs-en.git
+  - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
+  - REPO_ALIYUN_5: git@code.aliyun.com:khs1994-gitbook/ignition.git
+addons:
+  ssh_known_hosts:
+  - code.aliyun.com
+  - github.com
+branches:
+  only:
+  - master
