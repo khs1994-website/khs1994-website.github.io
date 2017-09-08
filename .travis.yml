@@ -41,6 +41,12 @@ script:
 - cd ~
 - export REPO=$REPO_5
 - export REPO_ALIYUN=$REPO_ALIYUN_5
+- git clone --depth=10 --branch=5.5 $REPO repo
+- cd repo
+- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- cd ~
+- export REPO=$REPO_6
+- export REPO_ALIYUN=$REPO_ALIYUN_6
 - git clone --depth=10 --branch=5.4 $REPO repo
 - cd repo
 - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
@@ -59,6 +65,8 @@ env:
   - REPO_ALIYUN_4: git@code.aliyun.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
   - REPO_ALIYUN_5: git@code.aliyun.com:khs1994-gitbook/ignition.git
+  - REPO_6: git@github.com:khs1994-gitbook/laravel-5.4.git
+  - REPO_ALIYUN_6: git@code.aliyun.com:khs1994-gitbook/laravel-5.4.git
 addons:
   ssh_known_hosts:
   - code.aliyun.com
