@@ -30,7 +30,7 @@ script:
 - export REPO=$REPO_3
 - export REPO_ALIYUN=$REPO_ALIYUN_3
 - git clone --depth=10 --branch=master $REPO repo
-- cd repo/Documentation
+- cd repo
 - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
 - cd ~
 - export REPO=$REPO_4
@@ -45,12 +45,12 @@ script:
 - cd repo
 - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
 - cd ~
-- export REPO=$REPO_6
-- export REPO_ALIYUN=$REPO_ALIYUN_6
-- git clone --depth=10 --branch=5.4 $REPO repo
-- cd repo
-- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
-- cd ~
+# - export REPO=$REPO_6
+# - export REPO_ALIYUN=$REPO_ALIYUN_6
+# - git clone --depth=10 --branch=5.4 $REPO repo
+# - cd repo
+# - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+# - cd ~
 install:
 - echo $PWD
 env:
