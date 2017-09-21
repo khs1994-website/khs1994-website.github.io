@@ -14,12 +14,12 @@ before_script:
 - export DEPLOY_BRANCH=gh-pages
 - docker pull khs1994/gitbook
 script:
-- cd ~
-- export REPO=$REPO_1
-- export REPO_ALIYUN=$REPO_ALIYUN_1
-- git clone --depth=10 --branch=master $REPO repo
-- cd repo/doc
-- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+# - cd ~
+# - export REPO=$REPO_1
+# - export REPO_ALIYUN=$REPO_ALIYUN_1
+# - git clone --depth=10 --branch=master $REPO repo
+# - cd repo/doc
+# - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
 - cd ~
 - export REPO=$REPO_2
 - export REPO_ALIYUN=$REPO_ALIYUN_2
