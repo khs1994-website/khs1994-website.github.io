@@ -55,8 +55,8 @@ install:
 - echo $PWD
 env:
   global:
-  - REPO_1: git@github.com:khs1994-gitbook/ignition.git
-  - REPO_ALIYUN_1: git@code.aliyun.com:khs1994-gitbook/ignition.git
+  - REPO_1: git@github.com:khs1994-gitbook/.git
+  - REPO_ALIYUN_1: git@code.aliyun.com:khs1994-gitbook/.git
   - REPO_2: git@github.com:khs1994-gitbook/coreos-docs.git
   - REPO_ALIYUN_2: git@code.aliyun.com:khs1994-gitbook/coreos-docs.git
   - REPO_3: git@github.com:khs1994-gitbook/etcd.git
@@ -64,7 +64,7 @@ env:
   - REPO_4: git@github.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_ALIYUN_4: git@code.aliyun.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
-  - REPO_ALIYUN_5: git@code.aliyun.com:khs1994-gitbook/ignition.git
+  - REPO_ALIYUN_5: git@code.aliyun.com:khs1994-gitbook/laravel-docs.git
   - REPO_6: git@github.com:khs1994-gitbook/laravel-5.4.git
   - REPO_ALIYUN_6: git@code.aliyun.com:khs1994-gitbook/laravel-5.4.git
 addons:
