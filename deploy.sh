@@ -15,21 +15,10 @@
 #git config --global user.email "khs1994@khs1994.com"
 # Clone the repository
 git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
-docker run -dit -v $PWD:/tmp/gitbook-src khs1994/gitbook
-docker ps -a
-function main()
-{
-  docker ps -l | grep Exited
-  if [ $? = 0 ];then
-    #已经退出
-    echo -e "\033[31mINFO\033[0m  Docker has STOP"
-  else
-    sleep 1s
-    echo -e "\033[32mINFO\033[0m  Docker is RUNING..."
-    main
-  fi
-}
-main
+docker run -it --rm \
+  -v $PWD:/tmp/gitbook-src \
+  khs1994/gitbook
+  
 pwd
 git clone -b "$DEPLOY_BRANCH" "$REPO" .deploy_git
 if [ ! $? = 0 ];then

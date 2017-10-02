@@ -8,11 +8,9 @@ before_script:
 - chmod 600 ~/.ssh/id_rsa
 - git config --global user.name "khs1994-merge-robot"
 - git config --global user.email "ai@khs1994.com"
-- echo "TZ='Asia/Shanghai'; export TZ" >> ~/.profile
-- ". ~/.profile"
+- export TZ='Asia/Shanghai'
 - date
 - export DEPLOY_BRANCH=gh-pages
-- docker pull khs1994/gitbook
 script:
 # - cd ~
 # - export REPO=$REPO_1
