@@ -12,24 +12,6 @@ before_script:
 - date
 - export DEPLOY_BRANCH=gh-pages
 script:
-# - cd ~
-# - export REPO=$REPO_1
-# - export REPO_ALIYUN=$REPO_ALIYUN_1
-# - git clone --depth=10 --branch=master $REPO repo
-# - cd repo/doc
-# - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
-- cd ~
-- export REPO=$REPO_2
-- export REPO_ALIYUN=$REPO_ALIYUN_2
-- git clone --depth=10 --branch=master $REPO repo
-- cd repo
-- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
-- cd ~
-- export REPO=$REPO_3
-- export REPO_ALIYUN=$REPO_ALIYUN_3
-- git clone --depth=10 --branch=master $REPO repo
-- cd repo
-- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
 - cd ~
 - export REPO=$REPO_4
 - export REPO_ALIYUN=$REPO_ALIYUN_4
@@ -53,12 +35,6 @@ install:
 - echo $PWD
 env:
   global:
-  - REPO_1: git@github.com:khs1994-gitbook/.git
-  - REPO_ALIYUN_1: git@code.aliyun.com:khs1994-gitbook/.git
-  - REPO_2: git@github.com:khs1994-gitbook/coreos-docs.git
-  - REPO_ALIYUN_2: git@code.aliyun.com:khs1994-gitbook/coreos-docs.git
-  - REPO_3: git@github.com:khs1994-gitbook/etcd.git
-  - REPO_ALIYUN_3: git@code.aliyun.com:khs1994-gitbook/etcd.git
   - REPO_4: git@github.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_ALIYUN_4: git@code.aliyun.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
