@@ -6,16 +6,12 @@
 
 ## 列表
 
-* [CoreOS](https://github.com/khs1994-gitbook/coreos-docs)
-* [etcd](https://github.com/khs1994-gitbook/etcd)
 * [Laravel 5.5 官方文档](https://github.com/khs1994-gitbook/laravel-docs-en)
 * [Laravel 5.5 中文文档](https://github.com/khs1994-gitbook/laravel-docs)
 * [Laravel 5.4 中文文档](https://github.com/khs1994-gitbook/laravel-5.4)
 
 ## 阅读
 
-* [CoreOS](https://khs1994-gitbook.github.io/coreos-docs/)
-* [etcd](https://khs1994-gitbook.github.io/etcd/)
 * [Laravel 5.5 官方文档](https://khs1994-gitbook.github.io/laravel-docs-en/)
 * [Laravel 5.5 官方文档](https://khs1994-gitbook.github.io/laravel-docs/)
 * [Laravel 5.4 中文文档](https://khs1994-gitbook.github.io/laravel-5.4/)
