@@ -16,7 +16,7 @@
 # Clone the repository
 git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
 docker run -it --rm \
-  -v $PWD:/tmp/gitbook-src \
+  -v $PWD:/srv/gitbook-src \
   khs1994/gitbook
   
 pwd
