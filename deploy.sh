@@ -18,7 +18,7 @@ git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file"
 docker run -it --rm \
   -v $PWD:/srv/gitbook-src \
   khs1994/gitbook
-  
+
 pwd
 git clone -b "$DEPLOY_BRANCH" "$REPO" .deploy_git
 if [ ! $? = 0 ];then
@@ -38,11 +38,9 @@ fi
 # Deploy to GitHub and aliyun
 cp -r _book/* .deploy_git/
 cd .deploy_git
-git remote add aliyun "$REPO_ALIYUN"
 git add .
 COMMIT=`date "+%F %T"`
 git commit -m "Travis CI Site updated: $COMMIT"
-git push -f aliyun "$DEPLOY_BRANCH"
 git push -f origin "$DEPLOY_BRANCH"
 cd ~
 sudo rm -rf repo

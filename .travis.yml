@@ -36,14 +36,10 @@ install:
 env:
   global:
   - REPO_4: git@github.com:khs1994-gitbook/laravel-docs-en.git
-  - REPO_ALIYUN_4: git@code.aliyun.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
-  - REPO_ALIYUN_5: git@code.aliyun.com:khs1994-gitbook/laravel-docs.git
   - REPO_6: git@github.com:khs1994-gitbook/laravel-5.4.git
-  - REPO_ALIYUN_6: git@code.aliyun.com:khs1994-gitbook/laravel-5.4.git
 addons:
   ssh_known_hosts:
-  - code.aliyun.com
   - github.com
 branches:
   only:
