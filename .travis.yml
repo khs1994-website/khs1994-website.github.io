@@ -15,22 +15,16 @@ script:
 - cd ~
 - export REPO=$REPO_4
 - export REPO_ALIYUN=$REPO_ALIYUN_4
-- git clone --depth=10 --branch=5.5 $REPO repo
+- git clone --depth=1 --branch=5.5 $REPO repo
 - cd repo
-- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- $TRAVIS_BUILD_DIR/deploy.sh
 - cd ~
 - export REPO=$REPO_5
 - export REPO_ALIYUN=$REPO_ALIYUN_5
-- git clone --depth=10 --branch=5.5 $REPO repo
+- git clone --depth=1 --branch=5.5 $REPO repo
 - cd repo
-- "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
+- $TRAVIS_BUILD_DIR/deploy.sh
 - cd ~
-# - export REPO=$REPO_6
-# - export REPO_ALIYUN=$REPO_ALIYUN_6
-# - git clone --depth=10 --branch=5.4 $REPO repo
-# - cd repo
-# - "~/build/khs1994-gitbook/gitbook-travis/deploy.sh"
-# - cd ~
 install:
 - echo $PWD
 env:
