@@ -1,0 +1,24 @@
+{
+    "title": "Kubernetes 指南",
+    "author": "https://github.com/feiskyer",
+    "description": "Kubernetes 指南",
+    "language": "zh-hans",
+    "links": {
+        "sidebar": {
+            "Home": "https://github.com/khs1994-gitbook"
+        }
+    },
+    "plugins": [
+        "-sharing",
+        "-highlight",
+        "-livereload",
+        "prism"
+    ],
+    "pluginsConfig": {
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-solarizedlight.css"
+            ]
+        }
+    }
+}

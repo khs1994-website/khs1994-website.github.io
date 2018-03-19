@@ -12,23 +12,30 @@ before_script:
 - date
 - export DEPLOY_BRANCH=gh-pages
 script:
+# - cd ~
+# - export REPO=$REPO_4
+# - export REPO_ALIYUN=$REPO_ALIYUN_4
+# - git clone --depth=1 --branch=5.5 $REPO repo
+# - cd repo
+# - $TRAVIS_BUILD_DIR/deploy.sh
+# - cd ~
+# - export REPO=$REPO_5
+# - export REPO_ALIYUN=$REPO_ALIYUN_5
+# - git clone --depth=1 --branch=5.5 $REPO repo
+# - cd repo
+# - $TRAVIS_BUILD_DIR/deploy.sh
 - cd ~
-- export REPO=$REPO_4
-- export REPO_ALIYUN=$REPO_ALIYUN_4
-- git clone --depth=1 --branch=5.5 $REPO repo
-- cd repo
-- $TRAVIS_BUILD_DIR/deploy.sh
-- cd ~
-- export REPO=$REPO_5
-- export REPO_ALIYUN=$REPO_ALIYUN_5
-- git clone --depth=1 --branch=5.5 $REPO repo
-- cd repo
+- git clone --depth=1 git@github.com:feiskyer/kubernetes-handbook.git k8s
+- cd k8s/zh
+- cp $TRAVIS_BUILD_DIR/k8s/book.json book.json
+- export REPO=$REPO_1
 - $TRAVIS_BUILD_DIR/deploy.sh
 - cd ~
 install:
 - echo $PWD
 env:
   global:
+  - REPO_1: git@github.com:khs1994-gitbook/kubernetes-handbook.git
   - REPO_4: git@github.com:khs1994-gitbook/laravel-docs-en.git
   - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
   - REPO_6: git@github.com:khs1994-gitbook/laravel-5.4.git
