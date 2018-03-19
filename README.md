@@ -8,6 +8,7 @@
 
 * [Laravel 5.5 官方文档](https://github.com/khs1994-gitbook/laravel-docs-en)
 * [Laravel 5.5 中文文档](https://github.com/khs1994-gitbook/laravel-docs)
+* [Kubernetes 指南](https://github.com/khs1994-gitbook/kubernetes-handbook)
 
 ### khs1994.com
 
@@ -19,6 +20,7 @@
 
 * [Laravel 5.5 官方文档](https://khs1994-gitbook.github.io/laravel-docs-en/)
 * [Laravel 5.5 中文文档](https://khs1994-gitbook.github.io/laravel-docs/)
+* [Kubernetes 指南](https://khs1994-gitbook.github.io/kubernetes-handbook/)
 
 ### khs1994.com
 
