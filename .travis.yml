@@ -40,11 +40,11 @@ install:
 - echo $PWD
 env:
   global:
-  - REPO_1: git@github.com:khs1994-gitbook/kubernetes-handbook.git
-  - REPO_4: git@github.com:khs1994-gitbook/laravel-docs-en.git
-  - REPO_5: git@github.com:khs1994-gitbook/laravel-docs.git
-  - REPO_6: git@github.com:khs1994-gitbook/laravel-5.4.git
-  - REPO_7: git@github.com:khs1994-gitbook/nginx-docs.git
+  - REPO_1: git@github.com:khs1994-docs/kubernetes-handbook.git
+  - REPO_4: git@github.com:khs1994-docs/laravel-docs-en.git
+  - REPO_5: git@github.com:khs1994-docs/laravel-docs.git
+  - REPO_6: git@github.com:khs1994-docs/laravel-5.4.git
+  - REPO_7: git@github.com:khs1994-docs/nginx-docs.git
 addons:
   ssh_known_hosts:
   - github.com
