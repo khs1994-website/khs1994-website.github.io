@@ -38,6 +38,11 @@ fi
 # Deploy to GitHub and aliyun
 cp -r _book/* .deploy_git/
 cd .deploy_git
+
+echo $1 > CNAME
+
+cp $TRAVIS_BUILD_DIR/robots.txt .
+
 git add .
 COMMIT=`date "+%F %T"`
 git commit -m "Travis CI Site updated: $COMMIT"

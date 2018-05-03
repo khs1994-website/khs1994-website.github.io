@@ -21,10 +21,10 @@
 
 ## 阅读
 
-* [Laravel 5.5 官方文档](https://khs1994-docs.github.io/laravel-docs-en/)
-* [Laravel 5.5 中文文档](https://khs1994-docs.github.io/laravel-docs/)
-* [Kubernetes 指南](https://khs1994-docs.github.io/kubernetes-handbook/)
-* [NGINX 官方文档中译版](https://khs1994-docs.github.io/nginx-docs/)
+* [Laravel 5.5 官方文档](https://laravel.docs.khs1994.com)
+* [Laravel 5.5 中文文档](https://laravel5.docs.khs1994.com)
+* [Kubernetes 指南](https://k8s.docs.khs1994.com)
+* [NGINX 官方文档中译版](https://nginx.docs.khs1994.com)
 
 ### 国内镜像
 
