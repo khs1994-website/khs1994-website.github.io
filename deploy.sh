@@ -39,7 +39,9 @@ fi
 cp -r _book/* .deploy_git/
 cd .deploy_git
 
-echo $1 > CNAME
+if ! [ -z "$1" ];then
+  echo $1 > CNAME
+fi
 
 cp $TRAVIS_BUILD_DIR/robots.txt .
 
