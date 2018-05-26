@@ -25,11 +25,11 @@ script:
 - cd repo
 - $TRAVIS_BUILD_DIR/deploy.sh
 
-- cd ~
-- export REPO=$REPO_3
-- git clone --depth=1 $REPO repo
-- cd repo
-- $TRAVIS_BUILD_DIR/deploy.sh
+# - cd ~
+# - export REPO=$REPO_3
+# - git clone --depth=1 $REPO repo
+# - cd repo
+# - $TRAVIS_BUILD_DIR/deploy.sh
 
 - cd ~
 - git clone --depth=1 git@github.com:DocsHome/nginx-docs.git
@@ -43,7 +43,7 @@ env:
   global:
   - REPO_1: git@github.com:khs1994-website/kubernetes-handbook.git
   - REPO_2: git@github.com:khs1994-website/laravel-docs.git
-  - REPO_3: git@github.com:khs1994-website/laravel5.5-docs.git
+  # - REPO_3: git@github.com:khs1994-website/laravel5.5-docs.git
   - REPO_4: git@github.com:khs1994-website/nginx-docs.zh-cn.git
 addons:
   ssh_known_hosts:
