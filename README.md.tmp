@@ -1,0 +1,43 @@
+# 技术文档、API 和代码示例 | khs1994.com Documents
+
+`docs.khs1994.com` 是面向开发人员和 IT 专业人士的技术文档、API 参考、代码示例、快速入门和教程的主页。
+
+* [Gitee](https://$GITEE_DEPLOY_URL/)
+
+## khs1994.com
+
+| GitHub    | GitHub Pages     | Gitee Pages     |
+| :------------- | :------------- | :----------- |
+| [khs1994.com 技术文档]($GITHUB_URL/docs)         | [khs1994.com 技术文档]($DEPLOY_URL/docs/) | - |
+| - | - | - |
+| [khs1994.com PHP 技术文档]($GITHUB_URL/php-docs) | [khs1994.com PHP 技术文档]($DEPLOY_URL/php-docs/) | - |
+
+## 前端
+
+| GitHub    | GitHub Pages     | Gitee Pages     |
+| :------------- | :------------- | :----------- |
+| [Rollup 中文文档]($GITHUB_URL/rollup-docs.zh-cn/tree/master) | [Rollup 中文文档]($DEPLOY_URL/rollup-docs.zh-cn) | [Rollup 中文文档]($GITEE_DEPLOY_URL/rollup-docs.zh-cn) |
+| [Rollup 英文文档]($GITHUB_URL/rollup-docs.us-en/tree/master) | [Rollup 英文文档]($DEPLOY_URL/rollup-docs.us-en) | [Rollup 英文文档]($GITEE_DEPLOY_URL/rollup-docs.us-en) |
+| - | - | - |
+| [TypeScript 英文文档]($GITHUB_URL/typescript-docs.us-en/tree/master) | [TypeScript 英文文档]($DEPLOY_URL/typescript-docs.us-en) | [TypeScript 英文文档]($GITEE_DEPLOY_URL/typescript-docs.us-en) |
+| [TypeScript 中文文档]($GITHUB_URL/typescript-docs.zh-cn/tree/master) | [TypeScript 中文文档]($DEPLOY_URL/typescript-docs.zh-cn) | [TypeScript 中文文档]($GITEE_DEPLOY_URL/typescript-docs.zh-cn) |
+| - | - | - |
+| [Webpack 英文文档]($GITHUB_URL/webpack-docs.us-en/tree/master) | [Webpack 英文文档]($DEPLOY_URL/webpack-docs.us-en) | [Webpack 英文文档]($GITEE_DEPLOY_URL/webpack-docs.us-en) |
+| - | - | - |
+| [VSCode 中文文档]($GITHUB_URL/vscode-docs.zh-cn/tree/master) | [VSCode 中文文档]($DEPLOY_URL/vscode-docs.zh-cn) | [VSCode 中文文档]($GITEE_DEPLOY_URL/vscode-docs.zh-cn) |
+
+## 后端
+
+| GitHub    | GitHub Pages     | Gitee Pages     |
+| :------------- | :------------- | :----------- |
+| [Redis 英文文档]($GITHUB_URL/redis-docs.us-en/tree/master) | [Redis 英文文档]($DEPLOY_URL/redis-docs.us-en) | [Redis 英文文档]($GITEE_DEPLOY_URL/redis-docs.us-en) |
+| - | - | - |
+| [Composer 英文文档]($GITHUB_URL/composer-docs.us-en/tree/master) | [Composer 英文文档]($DEPLOY_URL/composer-docs.us-en) | [Composer 英文文档]($GITEE_DEPLOY_URL/composer-docs.us-en) |
+| [Composer 中文文档]($GITHUB_URL/composer-docs.zh-cn/tree/master) | [Composer 中文文档]($DEPLOY_URL/composer-docs.zh-cn) | [Composer 中文文档]($GITEE_DEPLOY_URL/composer-docs.zh-cn) |
+| - | - | - |
+| [Laravel 官方文档]($GITHUB_URL/laravel-docs.us-en) | [Laravel 官方文档]($DEPLOY_URL/laravel-docs.us-en) | [Laravel 官方文档]($GITEE_DEPLOY_URL/laravel-docs.us-en) |
+| [Laravel 5.5 中文文档]($GITHUB_URL/laravel-docs.zh-cn) |  [Laravel 5.5 中文文档]($DEPLOY_URL/laravel-docs.zh-cn) | [Laravel 5.5 中文文档]($GITEE_DEPLOY_URL/laravel-docs.zh-cn) |
+| - | - | - |
+| [Kubernetes 指南 By feiskyer]($GITHUB_URL/kubernetes-handbook) | [Kubernetes 指南 By feiskyer]($DEPLOY_URL/kubernetes-handbook) | [Kubernetes 指南 By feiskyer]($GITEE_DEPLOY_URL/kubernetes-handbook) |
+| - | - | - |
+| [NGINX 官方文档中译版]($GITHUB_URL/nginx-docs.zh-cn) | [NGINX 官方文档中译版]($DEPLOY_URL/nginx-docs.zh-cn) | [NGINX 官方文档中译版]($GITEE_DEPLOY_URL/nginx-docs.zh-cn/) |
